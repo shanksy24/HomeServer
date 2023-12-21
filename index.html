@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single Page Website</title>
+<style>
+  /* Add styles for a colorful background and centering the text */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #85FFBD, #FFFB7D, #FF7EB3); /* A colorful gradient background */
+    color: #333;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  #time {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+</style>
+</head>
+<body>
+
+<h1>Hello bubba!</h1>
+<div id="time"></div>
+
+<script>
+  // Function to update the time
+  function updateTime() {
+    const now = new Date();
+    document.getElementById('time').textContent = now.toLocaleTimeString();
+  }
+  // Update the time every second
+  setInterval(updateTime, 1000);
+  // Initialize the time when the page loads
+  updateTime();
+</script>
+
+</body>
+</html>
+
