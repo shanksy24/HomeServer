@@ -1,0 +1,171 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    color:white
+}
+
+
+header {
+    background-color: #B85042;
+    height: 120px;
+    display: table;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #B85042;
+    height: 80px;
+    display: table;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#torso {
+    padding-bottom: 80px;
+}
+
+.title{
+    vertical-align: middle;
+    margin: 0 auto;
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+}
+
+body {
+    background-color: #A7BEAE;
+}
+
+#body {
+    min-height: 100vh;
+}
+
+.cell, .option {
+    height: calc(100% / 3 - 2px);
+    width: calc(100% / 3 - 2px);
+    margin: auto;
+    font-size:xx-large;
+    border-color: rgba(0, 0, 0, 0.2);
+    float:left;
+    padding: 0;
+    border-width: 0.25px;
+    background-color: white;
+    text-align: center;
+}
+
+.cellCluster, .optionCluster {
+    margin: 0; 
+    width:200px;
+    height:200px;
+    display: inline-block;
+    padding: 0;
+    margin: 0; 
+}
+
+.option {
+    height: 10%;
+    width: 100%;
+}
+
+.optionCluster {
+    width:50px;
+    height:500px;
+    text-align: center;
+}
+
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.organs {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+}
+
+#board {
+    background-color: black;
+    padding: 4px 5px 1px 5px;
+}
+
+#selectionPanel {
+    background-color: black;
+    padding: 4px 5px 1px 5px;
+}
+
+#boardContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#controls {
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+    background-color: #B85042;
+    color: #A7BEAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.controlsButton {
+    width: 120px;
+    background-color: #A7BEAE;
+    color: #B85042;
+    font-size: large;
+    margin: 0 auto;
+    border-width: 0px;
+    cursor:pointer;
+}
+
+#NewGameOptions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.newGameButton {
+    width: 60px;
+    background-color: #A7BEAE;
+    color: #B85042;
+    font-size: large;
+    margin: 0 auto;
+    float: left;
+    border-width: 0px;
+    cursor:pointer;
+    display:none;
+}
+
+.controlsButton:hover {
+    background-color: #B85042;
+    color: #A7BEAE;
+}
+
+hr {
+    color: #A7BEAE
+}
+
+.controlsText {
+    width: 180px;
+    color: white;
+    font-size: x-large;
+    margin: 0 auto;
+    border-width: 0px;
+}
+
+.controlsButton:disabled {
+    cursor: default;
+    background-color: #A7BEAE;
+    color: #B85042;
+}
